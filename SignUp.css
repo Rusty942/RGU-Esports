@@ -1,0 +1,137 @@
+html {
+  margin: 0;
+}
+
+
+/* 31, 29, 29 */
+body {
+
+background-color: rgb(31, 29, 29);
+margin: 0;
+
+}
+
+
+nav {
+
+width: 100%;
+overflow: auto;
+background-color:rgb(113, 33, 119);
+}
+
+
+ul {
+  
+margin: 0 0 0 40px;
+  list-style-type: none;
+  padding: 0px;
+  overflow: hidden;
+  background-color: rgb(113, 33, 119);
+ 
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+ margin-left:20px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding:15px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.logo {
+
+position: absolute;
+
+margin-right:15px;
+width: 50px;
+height: auto;
+
+
+}
+
+
+
+li a:hover {
+  background-color:rgb(75, 22, 78);
+  border-color:white;
+}
+
+
+
+
+
+  .signUpForm {
+
+    background-color:rgba(137, 42, 156, 0.219);
+    position: absolute;
+    top: 25%;
+    left:35%;
+    width:25%;
+    
+    text-align:center;
+  }
+
+  input[type=text] {
+    border: none;
+    border-bottom: 5px solid rgb(113, 33, 119);
+    padding: 8px 10px;
+    width:70%;
+    margin: 5px 0;
+    
+    display: inline-block;
+  }
+
+  input[type=submit] {
+    border: none;
+    border-bottom: 5px solid rgb(113, 33, 119);
+    background-color: white;
+    padding: 15px;
+    width:33%;
+    
+    cursor: pointer;
+    margin: 5px ;
+  }
+
+  input[type=date] {
+    border: none;
+    border-bottom: 5px solid rgb(113, 33, 119);
+    padding: 8px 10px;
+    width:70%;
+    margin: 5px 0;
+    display: inline-block;
+    
+  }
+
+  input[type=password] {
+    border: none;
+    border-bottom: 5px solid rgb(113, 33, 119);
+    padding: 8px 10px;
+    width:70%;
+    margin: 5px 0;
+    display: inline-block;
+  }
+  
+
+  label {
+    display: inline-block;
+  color:white;
+  margin: 0 10px;
+  
+
+  }
+
+  form {
+
+    margin-top:25%;
+    margin-bottom:25%;
+
+
+  }

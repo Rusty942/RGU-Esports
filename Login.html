@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- By doing ! then tab you can get automatic setup for HTML-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login - Esports Society</title>
+    <link rel="stylesheet" href="Login.css">
+<header></header>
+    
+   
+
+
+</head>
+<body>
+
+  <img class="logo" src="esportsLogo.png"></a>
+<nav>
+ <ul>
+         
+          <li><a href="#home">Home</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Games</a></li>
+          <li><a href="#forum">Forum</a></li>
+          <li><a href="#games">Games</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#awards">Awards</a></li>
+          <li><a href="#members">Members</a></li>
+          <li><a href="#contactUs">Contact us</a></li>
+         
+          <li style = "float:right"><a href="SignUp.html">SignUp</a></li>
+          <li style = "float:right"><a href="Login.html">Login</a></li>
+        </ul>   
+
+      </nav>
+
+
+
+ <div class="loginForm">
+
+
+    
+    <form>
+        <label for="Username">Username (required)</label><br>
+      <!--Username -->  <input type="text" id="Username"><br>
+        <label for="password">Password (required)</label><br>
+      <!--Password --> <input type="password" id="password"><br>
+
+      <button type = "button" onclick="LoginSubmit()">Login</button>
+    </form>
+
+</div>
+
+
+  <script>
+
+function LoginSubmit() {
+
+  var user = document.getElementById("Username").value;
+  var pass = document.getElementById("password").value;
+ 
+
+  if (user === "" && pass === "") {
+
+    alert("Fields required are missing values: Username, Password")
+
+   document.getElementById("Username").style = " border-bottom: 5px solid #751a1a"
+  // document.getElementById("Username").value = "Username was not entered, please enter"
+   document.getElementById("password").style = " border-bottom: 5px solid #751a1a"
+  
+
+  }
+  else if (user==="") {
+  alert("Fields required are missing values: Username")
+   document.getElementById("Username").style = " border-bottom: 5px solid #751a1a"
+  // document.getElementById("Username").value = "Username was not entered, please enter"
+   document.getElementById("password").style = " border-bottom: 5px solid rgb(113, 33, 119)"
+  }
+else if (pass === "") {
+  alert("Fields required are missing values: Password")
+  document.getElementById("password").style = " border-bottom: 5px solid #751a1a"
+  document.getElementById("Username").style = " border-bottom: 5px solid rgb(113, 33, 119)"
+
+
+}
+  else {
+    //This will take the user to the home page
+    window.location.replace("Home.html")
+
+
+  }
+
+ //alert(document.getElementById("Username").value)
+
+
+
+
+}
+
+</script>
+
+
+
+</body>
+</html>
